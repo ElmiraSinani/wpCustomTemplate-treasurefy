@@ -1,0 +1,698 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 8, 2016, 11:19:42 AM
+    Author     : Elmira
+*/
+
+
+.mobile-header{
+    display: none;    
+    text-align: center;
+    padding-top: 15px;
+    position: relative;
+}
+.open-menu-btn{
+    position: fixed;
+    left: 25px;
+    top: 35px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.mobile-close{
+    display: none;
+    width: 30px;
+    height: 30px;
+    font-size: 19px;
+    line-height: 30px;
+    color: #939393;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.open-menu-btn span.line{
+    width: 25px;
+    height: 2px;
+    background: #263a59;
+    display: block;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+@media (min-width: 1400px){
+    body{
+        position: relative;
+        padding-bottom: 100px;
+    }
+   .footer {
+        position: absolute;
+        z-index: 10;
+        width: 100%;
+        bottom: 0;
+    }
+    .main-block {
+        margin: 0;
+    }
+    .footer .footer-container{
+        margin: 0 ;
+    }
+}
+
+@media (max-width: 1170px){
+    body{
+        position: relative;
+    }
+    .mobile-header{
+        display: block;
+    }
+    .main-block {
+        width: 100%;
+    }
+    .main-container {
+        position: initial;
+        width: 100%;
+    }
+    .main-container .right-content {
+        width: 100%;
+        float: none;
+        margin: 0 auto;
+        padding: 0;
+        margin: 0 auto;
+    }
+    
+    .front-page .content-row .left{
+        margin-right: 20px;
+    }
+    .front-page.right-content .pageTitle,
+    .front-page.right-content .pageSubTitle{
+        text-align: center;
+    }
+    .front-page.right-content .pageTitle span.qmark{
+        font-size: 55px;
+    }
+    .about-posts .item {
+        width: 30%;
+        margin-right: 5%;
+        margin-bottom: 20px;
+        height: auto !important;;
+    }
+    .right-content .stage-item-block{
+        padding: 0;
+    }
+    .about-posts {
+        margin: 20px 0 25px 0;
+    }
+    
+    .sidebar-bg{
+        display: none;
+    }
+    .main-container .left-sidebar{
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        height: 100%;
+        left: -265px;
+        border-right: 1px solid #BFBEBE;
+    }
+    .logo {
+        padding: 15px 11px;
+        text-align: center;
+        position: relative;
+    }
+    .logo .mobile-close{
+        display: block;
+        cursor: pointer;
+    }
+    .main-container .right-content{
+        width: 835px;
+    }
+    .right-content.page-content .content-header{
+        padding: 0;
+    }
+    .right-content.page-content .line {
+        margin: 15px 0;
+    }
+    .right-content .page-main-content, 
+    .right-content .stage-main-content, 
+    .right-content .press-main-block .press-main-content{
+        margin: 0 0 25px 0px;
+    }
+    .our-process, 
+    .related-services, 
+    .services-block2 .competitors, 
+    .page-portfolio-block, 
+    .contact-page .contact-form-box, 
+    .contact-page .contact-info-box{
+        margin: 0 0px 25px 0px;
+    }
+    
+    .portfolio-gallery .left {
+        width: 100%;
+        float: none;
+    }
+    .portfolio-gallery .right {
+        width: 100%;
+        float: none;
+        margin-top: 15px;
+    }
+    .single-portfolio-page .services-block2 .competitors,
+    .single-portfolio-page .services-block2 .testimonial,
+    .single-portfolio-page .portfolio-block3 .results,
+    .single-portfolio-page .portfolio-block3 .solutions{
+        width: 100%;
+        height: auto !important;;
+        margin-bottom: 25px;
+    }
+    .single-portfolio-page .portfolio-block3 .results{
+        margin-bottom: 0;
+    }
+    .portfolio-block3 .results ul{
+        text-align: left;
+    }
+    .related-services .related-items{
+        
+    }  
+    .single-portfolio-page .related-services{
+        margin-bottom: 15px !important;
+    }
+    .services-block2 .testimonial,
+    .services-block2 .competitors{
+        width: 100%;
+        height: auto !important;
+    }
+    .blog-items{
+        width: 67%;
+        margin-right: 2%;
+    }
+    .blog-page .blog-sidebar {
+        width: 30%;
+    }
+    .blog-main-block {
+        display: inline-block;
+        padding-left: 0;
+    }
+    .blog-page-content {
+        width: 67%;
+        margin: 0;
+        margin-right: 2%;
+    }
+    .blog-single-page .blog-sidebar {
+        width: 30%;
+    }
+    
+    .press-block2 .releases{
+        width: 48%;
+        margin-left: 0;
+    }
+    .press-block2 .releases:first-of-type{
+        margin-right: 3%;
+    }
+    
+    .contact-page .contact-row{
+        margin: 0 0 25px 0;
+    }
+    
+    .footer .footer-container{
+        width: 100%;
+    }
+    .footer .footer-container.fpage {
+        width: 60%;
+        margin: 0 auto;
+    }
+    .footer .footer-container .paddress,
+    .footer .footer-container .pform,
+    .footer .footer-container .pcopy {
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+    .footer .footer-container .pform{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .footer .footer-container .paddress br{
+        display: none;
+    }
+    .footer .footer-container .pform input{
+        max-width: 100%;
+    }
+    .footer .footer-container .pform .text {
+        width: 100%;
+        text-align: center;
+        float: none;
+    }
+    .footer .footer-container .pform .form {
+        width: 100%;
+        float: none;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    
+}
+
+@media (max-width: 880px) {
+    .main-block{
+        padding: 0;
+    }
+    .main-container .right-content{
+        width: 100%;
+        padding: 0 40px !important;
+    }
+    .front-page .content-row .left{
+       
+        width: 100%;
+        margin: 0;
+        float: none;
+        padding: 0 40px;
+    }
+    .front-page.right-content .pageTitle, 
+    .front-page.right-content .pageSubTitle{
+        padding: 0 40px;
+        font-size: 25px;
+        margin: 10px 0;
+        line-height: 1.1em;
+    }
+    .front-page.right-content .pageTitle span.qmark {
+        font-size: 35px;
+    }
+    .front-page .content-row .left .businessStages, .front-page .content-row .left .testimonials {
+        width: 100%;
+        height: auto;
+        float: none;
+        margin-bottom: 20px;
+    }
+    .front-page .content-row .left .mainContent{
+        margin-bottom: 20px;
+        height: auto;
+    }
+    .front-page .content-row .right{
+        width:auto;
+        margin: 0 40px;
+        float: none;
+    }
+    .front-page .marketingWisdom li{
+        background-size: 100% 1px;
+    }
+    .front-page .front-call-action{
+        margin: 12px 40px;
+        line-height: 30px;
+    }
+    .front-page .front-call-action a.learn-more{
+        line-height: 1.1em;
+        width: 106px;
+        display: block;
+        margin: 5px auto;
+    }
+    .right-content .page-main-content, 
+    .right-content .stage-main-content, 
+    .right-content .press-main-block .press-main-content{
+        height: auto;
+    }
+    .right-content.page-content .content-header .title1{
+        letter-spacing: 1px;
+        line-height: 1em;
+        margin-top: 10px;
+        font-size: 33px;
+    }
+    .our-process .list-items .image{
+        float: none;
+        margin: 0 auto;
+    }
+    .our-process .list-items .items {
+        width: 100%;
+        float: none;
+    }
+    
+    .related-services .related-items, 
+    .page-portfolio-block .item {        
+        margin-bottom: 10px;
+    }
+    .related-services .related-items:last-child, 
+    :last-child{
+        margin: auto;
+    }
+    .related-services .related-items:nth-child(3n+4),
+    .page-portfolio-block .item:nth-child(3n+4){
+        clear: both;
+    }
+    .related-services,
+    .page-portfolio-block{
+        text-align: center;
+    }
+    .related-services .inner-block,
+    .page-portfolio-block .inner-block{
+        display: inline-block;
+    }
+    .right-content .stage-item-block {
+        padding: 0;
+    }
+    .right-content .stage-item ,
+    .stage-main-div .page-main-content.stage{
+        width: 100%;
+        height: auto !important;
+        min-height: 320px;
+    }
+    .right-content .stage-item .title{
+        width: 100%;
+    }
+    .press-main-block .press-main-content,
+    .stage-main-div .stage-testimonial, .press-main-block .press-contact{
+        width: 100%;
+        height: auto !important;
+        margin: 0;
+        margin-bottom: 25px;
+    }
+    .press-main-content{
+        margin-bottom: 25px !important;
+    }
+    .blog-main-block{
+        padding: 0;
+    }
+    .blog-items {
+        display: inline-block;
+    }
+    .blog-items .item {
+        width: 45%;
+        margin-right: 10%;
+    }
+    .blog-items .masonry{
+        -moz-column-gap: 5px;
+        -webkit-column-gap: 5px;
+    }
+    .blog-page .blog-sidebar,
+    .blog-single-page .blog-sidebar{
+        
+    }
+    .blog-sidebar .papular-posts ul li{
+        background-size: 100% 1px;
+    }
+    .blog-sidebar .add-space{
+        margin-bottom: 10px;
+    }
+    .blog-page-content{
+        
+    }
+    .blog-single-content .title-block .title,
+    .blog-single-content .title-block .social-light{
+        width: 100%;
+        float: none;
+    }
+    .related-blogs .item{
+        width: 45%;
+        margin-right: 5%;
+        margin-bottom: 20px;
+    }
+    .related-blogs .item .image {
+        height: 180px;
+        overflow: hidden;
+    }
+    
+    .share-comment-block .form-block {
+        width: 100%;
+        margin-right: 0;
+        height: auto;
+    }
+    .share-comment-block .author-block{
+        width: 100%;
+        height: auto;
+    }
+    
+    
+    .about-posts{
+        margin: 0;
+    }
+    
+    .press-main-content{
+        margin-top: 25px;
+    }
+    .contact-page .contact-row{
+        margin: 0;
+    }
+    .contact-page .main-image {
+        width: 100%;
+        float: none;
+        margin-bottom: 15px;
+    }
+    .contact-page .hello-box{
+        width: 100%;
+        margin-bottom: 15px;
+        height: auto;
+        padding-bottom: 50px;
+    }
+    .contact-page .main-content {
+        width: 100%;
+        height: auto;
+        float: none;
+        margin-right: 0;
+        margin-bottom: 25px;
+    }
+    .contact-page .submit-row input{
+        float: left;
+    }
+    .contact-page .contact-form-box,
+    .contact-info-box,
+    .contact-page .contact-map-image{
+        width: 100% !important;
+        height: auto !important;
+    }
+    .contact-page .contact-map-image{
+        margin-bottom: 15px;
+    }
+    .contact-page .contact-map-image img{
+        max-width: 100%;
+    }
+    .contact-page .absImagePath{
+        display: none;
+    }
+    
+    .portfolio-filter{
+        margin-left: 0;
+    }
+    .portfolio-block{
+        margin: 0;
+    }
+    .portfolio-filter a.branding{
+        margin-bottom: 5px;
+    }
+    .page-portfolio-block .item .image img{
+       
+    }
+    .page-portfolio-block .item .item-content a {
+        font-size: 12px;
+        line-height: 1.1;
+    }
+    
+    .main-container .right-content{
+        width: 100%;
+        display: inline-block;
+    }
+    .blog-items .item,
+    .blog-page-content,
+    .blog-single-page .blog-sidebar{
+        width: 60%;
+        float: none;
+        clear: both;
+        margin: 0 auto;
+    }
+    .related-blogs .item {
+        width: 80%;
+        margin: 0 auto !important;
+        margin-bottom: 20px !important;
+        float: none;
+    }
+    .blog-sidebar .wisdom-form, 
+    .blog-sidebar .papular-posts{
+        width: 100%;
+    }
+    
+    
+    .footer .footer-container {
+        width: auto;
+        padding: 15px;
+        margin: 0 40px;
+    }
+    .footer .footer-container .phone,
+    .footer .footer-container .address {
+        width: 30%;
+    }
+    .footer .footer-container .copy {
+        width: 40%;
+    }
+}
+
+@media (max-width: 780px) {
+    .press-block2 .releases li a{
+        font-size: 12px;
+        padding: 5px 13px;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .our-process .list-items .image{
+        margin: 15px auto;
+    }
+    .our-process .list-items .items li{
+        margin-bottom: 15px;
+    }
+    .about-posts .item {
+        width: 100%;
+        float: none;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    .about-posts .item{
+        height: auto;
+    }
+    .press .services-block2 .competitors,
+    .press .services-block2 .testimonial
+    {
+        width: 100%;
+        height: auto;
+    }
+    .press-main-block{
+         height: auto;
+    }
+    .contact-page .input-row input{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    .contact-page .contact-form-box h1{
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 700px) {
+    .free-consultation{
+    }
+    .free-consultation .open-form-btn{
+        height: 150px;
+        width: 35px;
+        background-size: 100% 100%;
+    }
+    .main-container .left-sidebar{
+        bottom: auto;
+        height: auto;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #BFBEBE;
+    }
+   
+    .blog-main-block{
+        text-align: center;
+    }
+    .blog-items{
+        text-align: center;
+        width: 60%;
+        margin: 0 auto;
+        float: none;
+    }
+    .blog-items .item{
+        margin-bottom: 15px;
+        text-align: left;
+    }
+    .blog-page .blog-sidebar {
+        width: 60%;
+        float: none;
+        margin: 0 auto;
+    }
+    .blog-items .item,
+    .blog-page-content,
+    .blog-single-page .blog-sidebar,
+    .press-block2 .releases{
+        width: 100%;
+    }
+    .press-block2 .releases:first-of-type{
+        margin-bottom: 25px;
+    }
+    .portfolio-gallery .left li{
+        height: auto !important;;
+    }
+    .portfolio-gallery .right #bx-pager a{
+        margin-right: 5px !important;
+        margin-bottom: 5px;
+    }
+    .portfolio-gallery .right #bx-pager a:last-child{
+        margin-bottom: 25px;
+    }
+    .portfolio-gallery .right{
+        margin-top: 3px;
+    }
+    .portfolio-gallery .right #bx-pager a img {
+        width: 95px;
+        height: 95px;
+    }
+    .footer .footer-container .paddress br{
+        display: block;
+    }
+    .footer .footer-container.fpage {
+        width: 80%;
+    }
+    
+}
+
+@media (max-width: 550px) {
+    .related-services .related-items, 
+    .page-portfolio-block .item{
+        float: none;
+        margin-left: 0 !important;
+    }
+    .right-content .page-main-content h1, 
+    .right-content .stage-main-content h1, 
+    .right-content .page-main-content h2, 
+    .press-main-content h1{
+        font-size: 20px;
+    }
+}
+@media (max-width: 450px) {
+    .main-block{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .front-page .content-row .left{
+        padding: 0 12px;
+    }
+    .front-page .front-call-action,
+    .front-page .content-row .right,
+    .footer .footer-container{
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 0;
+    }
+    .front-page .front-call-action{
+        line-height: 20px;
+        padding: 10px;
+    }
+    
+    
+    .right-content .stage-item .title{
+        width: 100%;
+    }
+    .footer .footer-container .phone,
+    .footer .footer-container .address ,
+    .footer .footer-container .copy {
+        width: 100%;
+        text-align: center;
+        padding-top: 10px;
+    }
+    .page-portfolio-block .item .image img{
+       
+    }
+    .blog-items,
+    .blog-page .blog-sidebar{
+        width: 90%;
+    }
+    
+}
+
+@media (max-width: 325px) {
+    .portfolio-item{
+        width: 100%;
+    }
+    .page-portfolio-block .item .image img{
+        width: 60%;
+    }
+}
